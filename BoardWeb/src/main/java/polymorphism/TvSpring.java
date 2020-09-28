@@ -9,5 +9,7 @@ public class TvSpring {
       TV tv = (TV)factory.getBean("tv");
       tv.powerOn();
       tv.volumeUp();
+      tv.volumeDown();
+      tv.powerOff();
    }
 }

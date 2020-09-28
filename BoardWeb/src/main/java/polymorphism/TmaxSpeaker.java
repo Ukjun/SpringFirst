@@ -1,19 +1,22 @@
 package polymorphism;
 
-public class TmaxSpeaker {
+import org.springframework.stereotype.Component;
+
+@Component("tMaxSpeaker")
+public class TmaxSpeaker implements Speaker{
    public TmaxSpeaker() {
-      System.out.println("===> TMaxSpeaker 객체생성");
+      System.out.println("===> TMaxSpeaker Create");
 
 
    }
-
+   @Override
    public void volumeUp() {
-      System.out.println("TmaxSpeaker --- 소리 울린다");
+      System.out.println("TmaxSpeaker --- Volume Up");
       
    }
-
+   @Override
    public void volumeDown() {
-      System.out.println("TmaxSpeaker --- 소리 낮춘다");
+      System.out.println("TmaxSpeaker --- Volume Down");
       
    }
 }
